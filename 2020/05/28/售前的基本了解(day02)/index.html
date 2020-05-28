@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>售前的基本知识 | 石名的技术博客</title><meta name="description" content="售前的基本知识"><meta name="author" content="Shi Ming,2849554326@qq.com"><meta name="copyright" content="Shi Ming"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="售前的基本知识"><meta name="twitter:description" content="售前的基本知识"><meta name="twitter:image" content="http://jerryc.me/img/1.jpg"><meta property="og:type" content="article"><meta property="og:title" content="售前的基本知识"><meta property="og:url" content="http://jerryc.me/2020/05/28/%E5%94%AE%E5%89%8D%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BA%86%E8%A7%A3(day02)/"><meta property="og:site_name" content="石名的技术博客"><meta property="og:description" content="售前的基本知识"><meta property="og:image" content="http://jerryc.me/img/1.jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://jerryc.me/2020/05/28/%E5%94%AE%E5%89%8D%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BA%86%E8%A7%A3(day02)/"><link rel="next" title="轮播图的使用" href="http://jerryc.me/2020/05/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E4%BD%BF%E7%94%A8/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: true,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: false,
+  isPhotoFigcaption: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: true  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">23</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/%20link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li></ul></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-互联网有哪些岗位，以及岗位职责是什么？"><span class="toc-number">1.</span> <span class="toc-text">1.互联网有哪些岗位，以及岗位职责是什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-什么是售前？"><span class="toc-number">2.</span> <span class="toc-text">2.什么是售前？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-售前岗位的职责"><span class="toc-number">3.</span> <span class="toc-text">3.售前岗位的职责</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-售前要掌握的技能"><span class="toc-number">4.</span> <span class="toc-text">4.售前要掌握的技能</span></a></li></ol></div></div></div><div id="body-wrap"><div class="post-bg" id="nav" style="background-image: url(/img/1.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">石名的技术博客</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/%20link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">售前的基本知识</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-05-28 00:00:00"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-05-28</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-05-28 21:48:57"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-05-28</span></time></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><h1 id="1-互联网有哪些岗位，以及岗位职责是什么？"><a href="#1-互联网有哪些岗位，以及岗位职责是什么？" class="headerlink" title="1.互联网有哪些岗位，以及岗位职责是什么？"></a>1.互联网有哪些岗位，以及岗位职责是什么？</h1><ul>
+<li>老板：提出需求</li>
+<li>产品：产品就是将客户或者老板的需求转变成一个真实可见的原型</li>
+<li>开发：前端、后台根据要求开发相应的程序</li>
+<li>客服：拨打接听400电话，客服会根据你的业务需求，指派对应的售前工程师介绍产品</li>
+<li>售前工程师：携带售前产品文档和产品宣讲的PPT，为客户讲解产品，吸引客户，促成购买<ul>
+<li>学习公司产品</li>
+<li>了解客户需求</li>
+<li>到客户现场给客户讲解公司产品，让客户熟悉产品，以获取客户需求，如果客户有需求，将会提出相应的解决方案</li>
+<li>多次给客户讲解，吸引客户试用，如果有问题，及时给客户答疑</li>
+<li>客户满意的话就会购买产品，我们们需要跟进项目的整个实施到交付</li>
+</ul>
+</li>
+<li>实施工程师：把产品部署到客户的服务器中其中包括：<ul>
+<li>私有化部署：在客户的服务器中部署产品</li>
+<li>非私有化部署：把产品部署到 私有云，客户只能通过一个url地址访问服务即可</li>
+</ul>
+</li>
+<li>售后（技术支持）<ul>
+<li>教会客户使用我们的产品</li>
+<li>实施团队遇到的问题我们也提供技术支持</li>
+<li>联系开发团队，反应用户提出的bug</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-什么是售前？"><a href="#2-什么是售前？" class="headerlink" title="2.什么是售前？"></a>2.什么是售前？</h1><p>售前是指与客户签合同前的阶段。大致包括线索获取、客户交流、提供技术方案、应标、签合同等流程。</p>
+<p>售前又分为产品型售前,方案型售前和区域售前</p>
+<ul>
+<li><p>产品型售前即公司有了产品以后，协助销售将产品推销给客户。</p>
+<ul>
+<li>软件型售前</li>
+<li>硬件公司售前</li>
+</ul>
+</li>
+<li><p>方案型售前是指根据客户的需求进行开发，为用户所需要的产品提供解决方案</p>
+</li>
+<li><p>区域售前更贴近客户，更了解客户需求。</p>
+</li>
+</ul>
+<h1 id="3-售前岗位的职责"><a href="#3-售前岗位的职责" class="headerlink" title="3.售前岗位的职责"></a>3.售前岗位的职责</h1><p>售前的基本职责是协助销售完成项目签单，售前的工作主要围绕项目生命周期开展。</p>
+<ul>
+<li>解决方案规划：需发掘行业诉求、问题和痛点，整理行业解决方案和最佳实践，进行解决方案规划、设计；</li>
+<li>技术交流：协助销售同目标客户进行技术交流，讲解公司现有的解决方案和案例，并在交流中了解客户的需求；</li>
+<li>编制解决方案：基于客户需求编写解决方案。</li>
+<li>方案讲解(PPT)：负责为客户讲解、演示方案，并引导用户认同技术方案</li>
+<li>编写技术文档(Word)：如方案被客户认可，需要提供技术文档，如：技术规范书、可研材料、工作量评估材料等等</li>
+<li>投标支撑：负责协助销售完成投标工作，主要负责技术分册、商务分册的编制，并到投标现场进行述标、答辩等工作。</li>
+</ul>
+<h1 id="4-售前要掌握的技能"><a href="#4-售前要掌握的技能" class="headerlink" title="4.售前要掌握的技能"></a>4.售前要掌握的技能</h1><ol>
+<li>懂产品：售前必须对自家公司的产品、方案非常熟悉，尤其是自己所负责的产品、项目；并对友商的产品、方案有所了解；</li>
+<li>懂商务：售前要熟悉签单、招投标流程；要了解客户单位的组织架构、决策流程、关键人等情况；</li>
+<li>懂业务：售前要对自己负责的行业有所了解，对具体服务的客户业务要非常熟悉；</li>
+<li>懂技术：售前要掌握基本的硬件、网络、软件开发、数据库等知识；并且经常对可能涉及的新技术进行学习，如云计算、区块链、AI、AR、5G等；</li>
+<li>懂需求：需求工作是售前的基本功，售前需要掌握需求调研、需求分析 、需求方案编制、需求评审、需求交底、需求挖掘等技能。</li>
+<li>知趋势：售前要了解业界最新进展和发展方向，了解行业痛点和诉求；对行业有较强的洞察力和敏感度。</li>
+<li>会规划：高级售前、解决方案专家、解决方案架构师等，需要会规划产品、会做顶层设计；</li>
+<li>能写：售前的主要工作内容就是写材料。所以要具备文字表达能力，能够撰写各种类型的文档；</li>
+<li>会说：售前要会讲方案，并且具备良好的沟通能力，能与客户、团队有效沟通；</li>
+</ol>
+<p>售前还需要不断学习能力，抗压能力，协调能力应变能力和引导能力</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:2849554326@qq.com">Shi Ming</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jerryc.me/2020/05/28/%E5%94%AE%E5%89%8D%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BA%86%E8%A7%A3(day02)/">http://jerryc.me/2020/05/28/%E5%94%AE%E5%89%8D%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BA%86%E8%A7%A3(day02)/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jerryc.me" target="_blank">石名的技术博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/weixin.jpg" alt="微信"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/zhifubao.jpg" alt="支付寶"/><div class="post-qr-code__desc">支付寶</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2020/05/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E4%BD%BF%E7%94%A8/"><img class="next_cover lazyload" data-src="/img/2.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">轮播图的使用</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By Shi Ming</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/third-party/click_heart.js"></script><script src="/js/search/local-search.js"></script></body></html>
